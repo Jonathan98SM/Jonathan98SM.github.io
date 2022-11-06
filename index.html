@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1>J S M</h1>
+        <nav class="nav">
+            <ul id="links">
+                <li>
+                    <a href="#inicio">Inicio</a>
+                    <span class="linea seleccionado"></span>
+                </li>
+                <li>
+                    <a href="#sobremi">Sobre Mi</a>
+                    <span class="linea "></span>
+                </li>
+                <li>
+                    <a href="#portafolio">Portafolio</a>
+                    <span class="linea "></span>
+                </li>
+                <li>
+                    <a href="#noticia">Noticia</a>
+                    <span class="linea "></span>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                    <span class="linea "></span>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-bar"id="nav-bar">
+            <i class="fa-solid fa-bars" ></i>
+        </div>
+    </header>
+    <!-- Inicio -->
+    <section id="inicio">
+        <div class="contenedor-img">
+            <div class="imagen"></div>
+        </div>
+        <div class="contenido">
+            <div class="info">
+                <h3>Diseño Web</h3>
+                <span>Ingeniero en Automatica</span>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sobre mi-->
+    <section id="sobremi">
+        <div class="contenido">
+            <div class="left">
+                <dif class="contenedor-img">
+                    <img src="img/foto-sobremi.jpg" alt="">
+                </dif>
+            </div>
+            <div class="right">
+                <div class="info">
+                    <span>SOBRE MI</span>
+                    <h3>Ingeniero Automático y Desarrollador Web establecido en La Habana, Cuba</h3>
+                    <p>Soy Ing. Automático graduado de la Universidad Tecnológica de La Habana. Trabajo como especialista A en Automatica realizando proyectos y montajes de sistemas de automatizacion en industrias. Tambien poseo habilidades en trbajos web, con mayor especialización en proyectos domoticos y empresariales. </p>
+                    <a href="#"class="btn-descargar">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portafolio-->
+    <section id="portafolio">
+        <div class="contenido">
+            <div class="encabezado-portafolio">
+                <div class="left">
+                    <span>PORTAFOLIO</span>
+                    <h3>Mis Trabajos</h3>
+                </div>
+                <div class="right" id="categorias">
+                    <a href="javascript:setPushCategoria(0)" class="categoria activada" id="todos">Todos</a>
+                    <a href="javascript:setPushCategoria(1)" class="categoria inactivo"id="diseno">Diseños</a>
+                    <a href="javascript:setPushCategoria(2)"class="categoria inactivo"id="ing" >Ingenería</a>
+                </div>
+            </div>
+            <div class="galeria" id="galeria">
+                <div class="proyecto design">
+                    <img src="img/1.jpg" alt="">
+                    <h3>Proyecto 1</h3>
+                </div>
+                <div class="proyecto ingenieria">
+                    <img src="img/2.jpg" alt="">
+                    <h3>Proyecto 2</h3>
+                </div>
+                <div class="proyecto design">
+                    <img src="img/3.jpg" alt="">
+                    <h3>Proyecto 3</h3>
+                </div>
+                <div class="proyecto ingenieria">
+                    <img src="img/4.jpg" alt="">
+                    <h3>Proyecto 4</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="contenido">
+            <div class="left">
+                <h3>Tengo altas habilidades en desarrollo y programación</h3>
+                <p>Poseo habilidades en el desarrolloy la programación. Me encuentro trabajando en Sistemas de Control Industrial, Domótico y Servicions Web, visualmente sofisticados y tecnológicamente competente.</p>
+            </div>
+            <div class="right">
+                <div class="contenedor-skills" id="skills">
+                    <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"></span>Desarrollo Web</p>
+                            <span class="porcentaje">80%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-progreso1" id="html"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"></span>Automatica Aplicada</p>
+                            <span class="porcentaje">90%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-progreso2" id="bi"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"></span>Desarrolo Software</p>
+                            <span class="porcentaje">70%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-progreso3" id="dl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
